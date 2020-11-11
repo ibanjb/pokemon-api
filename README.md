@@ -33,10 +33,11 @@ Retrieve information from PokeAPI (https://pokeapi.co) and displayed as a card l
 
 ### Missing requirements
 
-Due to the short time that I have to perform this exercise, some of the requirements cannot be done:
+Due to the short time (was done in last than 3 hours) that I have to perform this exercise, some of the requirements cannot be done:
 
 - Filter Pokemons in the frontend side
 - Base atributes doesn't come from a single resource, they are retrieving from the same API call
+- Include unit tests for both (backend and frontend)
 
 ## Screenshots
 
