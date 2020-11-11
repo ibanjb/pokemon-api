@@ -13,6 +13,8 @@ const PokemonContainer = (props: {
   onRemove: Function;
   list: Array<IPokemon>;
   deck: Array<String>;
+  onSortAscending: Function;
+  onSortDescending: Function;
   sortAscending: Boolean;
   loading: Boolean;
 }) => {
@@ -54,6 +56,7 @@ const mapStateToProps = (state: any) => {
   return {
     list: state.pokemons.list,
     deck: state.pokemons.deck,
+    sortAscending: state.pokemons.sortAscending,
     loading: state.pokemons.loading,
   };
 };

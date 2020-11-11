@@ -2,7 +2,6 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import PokemonCard from '../../components/PokemonCard';
 import IPokemon from '../../interfaces/IPokemon';
 import Layout from '../../components/Layout';

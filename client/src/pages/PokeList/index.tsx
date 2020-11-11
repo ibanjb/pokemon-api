@@ -51,13 +51,13 @@ const PokeList = (props: {
     }
   }, [onOpen, list, loading]);
 
-  const handleSort = React.useCallback((direction: string) =>{
-    if (direction === 'asc') {
+  const handleSortAscending = React.useCallback((e: any) =>{
       onSortAscending();
-    } else {
-      onSortDescending();
-    }
-  }, [onSortAscending, onSortDescending]);
+  }, [onSortAscending]);
+
+  const handleSortDescending = React.useCallback((e: any) =>{
+    onSortDescending();
+}, [onSortDescending]);
 
   return (
     <Layout>
@@ -78,12 +78,12 @@ const PokeList = (props: {
               { !sortAscending && <span className={classes.sort}>Sort descending</span> }
             </Grid>
             <Grid item>
-              <div onClick={handleSort('asc')}>
+              <div onClick={handleSortAscending}>
                 <ArrowDropUp className={classes.icon} /> 
               </div>
             </Grid>
             <Grid item>
-            <div onClick={handleSort('desc')}>
+            <div onClick={handleSortDescending}>
                 <ArrowDropDown className={classes.icon} /> 
               </div>
             </Grid>
